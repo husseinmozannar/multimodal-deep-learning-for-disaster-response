@@ -2,6 +2,11 @@
 Code and Dataset for paper: "Damage Identification in Social Media Posts using Multimodal Deep Learning" authors: Hussein Mouzannar, Yara Rizk, Mariette Awad; to appear in ISCRAM 2018
 # Requirements
 Python 3.6, Tensorflow 1.40 (and all its dependencies)
+
+# Dataset
+
+The multimodal dataset used in this paper is available for download only for academic purposes using the following link: 
+
 # Image model Training
 (these steps are better described at https://github.com/tensorflow/models/tree/master/research/slim)
 
