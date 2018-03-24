@@ -1,0 +1,70 @@
+import csv
+import shutil
+import os
+import glob
+import pprint
+
+#used to create a directory of text files
+#from CrisisLex datasets with only tweets with a certain label
+directory= ""
+
+def copy_dir(src, dst, *, follow_sym=True):
+    if os.path.isdir(dst):
+        dst = os.path.join(dst, os.path.basename(src))
+    if os.path.isdir(src):
+        shutil.copyfile(src, dst, follow_symlinks=follow_sym)
+        shutil.copystat(src, dst, follow_symlinks=follow_sym)
+    return dst
+
+def csvToTextT26():
+    dirName = directory.replace('CrisisLexT26','textCrisis')
+    print(dirName +"  "+directory)
+    shutil.copytree(directory,dirName,copy_function=copy_dir)
+
+    for subdir, dirs ,files in os.walk(directory):
+        for file in files:
+            if file.endswith("labeled.csv"):
+                fileName = os.path.join(subdir,file)
+                i = 0
+                destination = subdir.replace('CrisisLexT26','textCrisis')
+                print(fileName)
+                with open(fileName,mode = 'r',encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for rows in reader:
+                        if rows[' Informativeness']=='Not related':
+                            try:
+                                tweet = rows[' Tweet Text']
+                                textfileName = file[:-4] + str(i)+'.txt'
+                                textfileName = os.path.join(destination,textfileName)
+                                with open(textfileName,"w") as text_file:
+                                    text_file.write(tweet)
+                                i+=1
+                            except:
+                                print("some error occured, proceeding")
+
+def csvToTextNLP():
+    dirName = directory.replace('CrisisNLP','CrisisNLP - not related')
+    print(dirName +"  "+directory)
+    shutil.copytree(directory,dirName,copy_function=copy_dir)
+
+    for subdir, dirs ,files in os.walk(directory):
+        for file in files:
+            if file.endswith(".csv"):
+                fileName = os.path.join(subdir,file)
+                i = 0
+                destination = subdir.replace('CrisisNLP','CrisisNLP - not related')
+                print(fileName)
+                with open(fileName,mode = 'r',encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for rows in reader:
+                        if rows['choose_one_category']=='not_related_or_irrelevant':
+                            try:
+                                tweet = rows['tweet_text']
+                                textfileName = file[:-4] + str(i)+'.txt'
+                                textfileName = os.path.join(destination,textfileName)
+                                with open(textfileName,"w") as text_file:
+                                    text_file.write(tweet)
+                                i+=1
+                            except:
+                                print("some error occured, proceeding")                
+
