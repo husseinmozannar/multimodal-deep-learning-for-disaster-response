@@ -26,3 +26,8 @@ python freeze_graph.py --input_graph=/tmp/inception_v3_inf_graph.pb  --input_che
 --input_binary=true --output_graph=/tmp/frozen_inception_v3.pb  --output_node_names=InceptionV3/Predictions/Reshape_1
 Now you can use frozen_inception_v3.pb.
 
+# Text model training
+
+We adapt the code from https://github.com/dennybritz/cnn-text-classification-tf to our dataset and add the ability to display a confusion matrix and predict single captions.
+
+train.py produces for each model a folter containing graph data that can be automatically used later for prediction.
