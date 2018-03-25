@@ -5,7 +5,7 @@ Python 3.6, Tensorflow 1.40 (and all its dependencies)
 
 # Dataset
 
-The multimodal dataset used in this paper is available for download only for academic purposes using the following link: 
+The multimodal dataset (image and text for each post) is collected from social media sites (Twitter and Instagram) and labeled by a group of 5 volunteers. The dataset was used in the aforementioned paper and is available for download only for academic purposes using the following link: 
 
 https://drive.google.com/open?id=1lLhTpfYBFaYwlAVaH7J-myHuN8mdV595
 
