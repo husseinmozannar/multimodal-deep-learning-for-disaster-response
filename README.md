@@ -7,6 +7,10 @@ Python 3.6, Tensorflow 1.40 (and all its dependencies)
 
 The multimodal dataset used in this paper is available for download only for academic purposes using the following link: 
 
+https://drive.google.com/open?id=1lLhTpfYBFaYwlAVaH7J-myHuN8mdV595
+
+Please cite our paper if you use this dataset in an academic publication.
+
 # Image model Training
 (these steps are better described at https://github.com/tensorflow/models/tree/master/research/slim)
 
