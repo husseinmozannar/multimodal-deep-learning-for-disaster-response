@@ -40,3 +40,23 @@ Now you can use frozen_inception_v3.pb.
 We adapt the code from https://github.com/dennybritz/cnn-text-classification-tf to our dataset and add the ability to display a confusion matrix and predict single captions.
 
 train.py produces for each model a folter containing graph data that can be automatically used later for prediction.
+
+# Decision Fusion
+
+The first step is to obtain predictions using our trained image and text models on the train/test/val sets:
+
+1- get image representations and save them: use loadDataImage.py
+
+2- get text representation and save them: use loadDataText.py: make sure to load the correct text model
+
+You will have .pkl file for each predictions for easy reuse later on.
+
+After you have have obtained your new "dataset", annDecision implements a simple neural network and computes accuracies, svm_knn implements a linear and guassian svm and knn models for decision fusion to get accuracies. Finally decisionRules implements a max decision rule and computes accuracies
+
+# Feature Fusion
+
+Same as for Decision fusion, obtain your new dataset of features using the same scripts (but different modules). annFeatures implements a deep neural network and svm_knn as before.
+
+# Visual
+
+We have an implementation of PCA and LDA to visualize our features in 2D, just load your data and run.
