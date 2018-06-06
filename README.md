@@ -1,5 +1,7 @@
 # multimodal-deep-learning-for-diaster-response
-Code and Dataset for paper: "Damage Identification in Social Media Posts using Multimodal Deep Learning" authors: Hussein Mouzannar, Yara Rizk, Mariette Awad; to appear in ISCRAM 2018
+Code and Dataset for paper: "Damage Identification in Social Media Posts using Multimodal Deep Learning" authors: Hussein Mouzannar, Yara Rizk, Mariette Awad; in ISCRAM 2018
+
+Available here: https://www.researchgate.net/publication/325386740_Damage_Identification_in_Social_Media_Posts_using_Multimodal_Deep_Learning
 # Requirements
 Python 3.6, Tensorflow 1.40 (and all its dependencies)
 
