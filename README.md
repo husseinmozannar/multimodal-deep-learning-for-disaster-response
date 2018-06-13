@@ -2,6 +2,9 @@
 Code and Dataset for paper: "Damage Identification in Social Media Posts using Multimodal Deep Learning" authors: Hussein Mouzannar, Yara Rizk, Mariette Awad; in ISCRAM 2018
 
 Available here: https://www.researchgate.net/publication/325386740_Damage_Identification_in_Social_Media_Posts_using_Multimodal_Deep_Learning
+
+If you find our dataset or code useful to your research, please consider citing our paper.
+
 # Requirements
 Python 3.6, Tensorflow 1.40 (and all its dependencies)
 
@@ -11,7 +14,6 @@ The multimodal dataset (image and text for each post) is collected from social m
 
 https://drive.google.com/open?id=1lLhTpfYBFaYwlAVaH7J-myHuN8mdV595
 
-Please cite our paper if you use this dataset in an academic publication.
 
 # Image model Training
 (these steps are better described at https://github.com/tensorflow/models/tree/master/research/slim)
@@ -41,7 +43,9 @@ Now you can use frozen_inception_v3.pb.
 
 We adapt the code from https://github.com/dennybritz/cnn-text-classification-tf to our dataset and add the ability to display a confusion matrix and predict single captions.
 
-train.py produces for each model a folter containing graph data that can be automatically used later for prediction.
+Make sure to download either the word2vec embeddings found here: https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit or the glove embeddings: https://nlp.stanford.edu/projects/glove/.
+
+train.py produces for each model a folder containing graph data that can be automatically used later for prediction.
 
 # Decision Fusion
 
