@@ -1,7 +1,12 @@
 # multimodal-deep-learning-for-diaster-response
-Code and Dataset for paper: "Damage Identification in Social Media Posts using Multimodal Deep Learning" authors: Hussein Mouzannar, Yara Rizk, Mariette Awad; in ISCRAM 2018
+Code and Dataset for Damage Identification in Social Media Posts using Multimodal Deep Learning, citation:
 
-Available here: https://www.researchgate.net/publication/325386740_Damage_Identification_in_Social_Media_Posts_using_Multimodal_Deep_Learning
+Hussein Mouzannar, Yara Rizk, & Mariette Awad. (2018). Damage Identification in Social Media Posts using Multimodal Deep Learning. In Kees Boersma, & Brian Tomaszeski (Eds.), ISCRAM 2018 Conference Proceedings – 15th International Conference on Information Systems for Crisis Response and Management (pp. 529–543). Rochester, NY (USA): Rochester Institute of Technology.
+
+
+Available here:
+
+http://idl.iscram.org/files/husseinmouzannar/2018/1577_HusseinMouzannar_etal2018.pdf
 
 If you find our dataset or code useful to your research, please consider citing our paper.
 
