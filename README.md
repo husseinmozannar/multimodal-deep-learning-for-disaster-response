@@ -1,12 +1,13 @@
 # multimodal-deep-learning-for-diaster-response
-Code and Dataset for Damage Identification in Social Media Posts using Multimodal Deep Learning, citation:
-
-Hussein Mouzannar, Yara Rizk, & Mariette Awad. (2018). Damage Identification in Social Media Posts using Multimodal Deep Learning. In Kees Boersma, & Brian Tomaszeski (Eds.), ISCRAM 2018 Conference Proceedings – 15th International Conference on Information Systems for Crisis Response and Management (pp. 529–543). Rochester, NY (USA): Rochester Institute of Technology.
-
+Code and Dataset for Damage Identification in Social Media Posts using Multimodal Deep Learning
 
 Available here:
 
 http://idl.iscram.org/files/husseinmouzannar/2018/1577_HusseinMouzannar_etal2018.pdf
+
+with dataset:
+
+https://archive.ics.uci.edu/ml/datasets/Multimodal+Damage+Identification+for+Humanitarian+Computing
 
 If you find our dataset or code useful to your research, please consider citing our paper.
 
@@ -16,6 +17,8 @@ Python 3.6, Tensorflow 1.40 (and all its dependencies)
 # Dataset
 
 The multimodal dataset (image and text for each post) is collected from social media sites (Twitter and Instagram) and labeled by a group of 5 volunteers. The dataset was used in the aforementioned paper and is available for download only for academic purposes using the following link: 
+
+https://archive.ics.uci.edu/ml/datasets/Multimodal+Damage+Identification+for+Humanitarian+Computing
 
 https://drive.google.com/open?id=1lLhTpfYBFaYwlAVaH7J-myHuN8mdV595
 
@@ -71,3 +74,7 @@ Same as for Decision fusion, obtain your new dataset of features using the same 
 # Visual
 
 We have an implementation of PCA and LDA to visualize our features in 2D, just load your data and run.
+
+# Citation:
+
+Hussein Mouzannar, Yara Rizk, & Mariette Awad. (2018). Damage Identification in Social Media Posts using Multimodal Deep Learning. In Kees Boersma, & Brian Tomaszeski (Eds.), ISCRAM 2018 Conference Proceedings – 15th International Conference on Information Systems for Crisis Response and Management (pp. 529–543). Rochester, NY (USA): Rochester Institute of Technology.
