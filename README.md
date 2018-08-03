@@ -1,4 +1,4 @@
-# multimodal-deep-learning-for-diaster-response
+# multimodal-deep-learning-for-disaster-response
 Code and Dataset for Damage Identification in Social Media Posts using Multimodal Deep Learning
 
 Available here:
