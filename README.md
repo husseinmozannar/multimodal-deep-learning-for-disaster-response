@@ -3,7 +3,7 @@ Code and Dataset for Damage Identification in Social Media Posts using Multimoda
 
 Available here:
 
-http://idl.iscram.org/files/husseinmouzannar/2018/1577_HusseinMouzannar_etal2018.pdf
+http://idl.iscram.org/files/husseinmouzannar/2018/2129_HusseinMouzannar_etal2018.pdf
 
 with dataset:
 
