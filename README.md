@@ -1,4 +1,7 @@
 # multimodal-deep-learning-for-disaster-response
+
+Warning: the code in this repo is now very outdated and is no longer being maintened, I would recommend using the dataset but trying to re-implement things using newer versions of tensorflow. Everything here relies on the slim library, but that implementation has changed and is no longer fully compatible with the code here.
+
 Code and Dataset for Damage Identification in Social Media Posts using Multimodal Deep Learning
 
 Available here:
